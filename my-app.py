@@ -45,7 +45,7 @@ if selected == "About me":
         st.subheader('I wrote a book! ')
         inner_cols = st.columns([0.5,2])
         with inner_cols[0]:
-                image = Image.open('portada_libro2.png')
+                image = Image.open('Pictures\portada_libro2.png')
                 st.image(image)
         with inner_cols[1]: 
                 st.markdown('''<div style="text-align: justify;"> In my time at Liquid Lab Ventures among my usual tasks I led the process 
@@ -65,14 +65,14 @@ if selected == "Experience":
         st.markdown('**_XXX')
 
 if selected == "Portfolio":
-    col5, colx, col6 = st.columns([0.8,0.1,0.8])
+    col5,= st.columns(1)
 
     with col5:
         st.subheader('Movie Recomendation Engine')
         
-        inner_cols = st.columns([0.4,2])
+        inner_cols = st.columns([0.8,1.5])
         with inner_cols[0]:
-                image = Image.open('portada_libro2.png')
+                image = Image.open('Pictures\movie-rec.png')
                 st.image(image)
         with inner_cols[1]: 
                 st.markdown('''<div style="text-align: justify;">Movie recommendation engine powered by Machine Learning (KNNeighbors). The engine
@@ -83,24 +83,17 @@ if selected == "Portfolio":
                 the engine is built with streamlit and all the EDA and ML with python and its libraries such as Pandas and Scikit-learn.</div>''', unsafe_allow_html=True)
         
         st.subheader('Movie Recomendation Engine')      
-        inner_cols = st.columns([0.4,2])
+        inner_cols = st.columns([0.8,1.5])
         with inner_cols[0]:
-                image = Image.open('portada_libro2.png')
+                image = Image.open('Pictures\movie-rec.png')
                 st.image(image)
         with inner_cols[1]: 
-                st.markdown('''<div style="text-align: justify;"> In my time at Liquid Lab Ventures among my usual tasks I led the process 
-                of documenting our methodology and writting a book where the Venture Building process is explained and detailed with our 
-                own ventures and expepreinces. The book is a guide for all of those willing to launch a new business making the most 
-                of the digital world! </div>''', unsafe_allow_html=True)
-    with colx:
-        st.subheader('')   
+                st.markdown('''<div style="text-align: justify;">Movie recommendation engine powered by Machine Learning (KNNeighbors). The engine
+                is twofold; if given a movie title it recommends 3 other movies based on genre, duration, year and rating amongst others. Further, 
+                it also presents the user with three top picks for the most rated genres and a sneak-peek to the movie's trailer. </div>''', unsafe_allow_html=True)
+                st.write('')
+                st.markdown('''<div style="text-align: justify;">This project leverages two databases: Imdb and Rotten Tomatoes. In terms of technology, the 
+                the engine is built with streamlit and all the EDA and ML with python and its libraries such as Pandas and Scikit-learn.</div>''', unsafe_allow_html=True)
 
-    with col6:
-        st.subheader('Movie Recomendation Engine')
-        
-        inner_cols = st.columns([0.4,2])
-        with inner_cols[0]:
-                image = Image.open('portada_libro2.png')
-                st.image(image)
-        with inner_cols[1]: 
-                st.markdown('''<div style="text-align: justify;"> In my </div>''', unsafe_allow_html=True)
+    # with col6:
+    #     st.subheader('Movie Recomendation Engine')
