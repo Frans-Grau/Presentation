@@ -75,10 +75,12 @@ if selected == "Portfolio":
                 image = Image.open('portada_libro2.png')
                 st.image(image)
         with inner_cols[1]: 
-                st.markdown('''<div style="text-align: justify;"> In my time at Liquid Lab Ventures among my usual tasks I led the process 
-                of documenting our methodology and writting a book where the Venture Building process is explained and detailed with our 
-                own ventures and expepreinces. The book is a guide for all of those willing to launch a new business making the most 
-                of the digital world! </div>''', unsafe_allow_html=True)
+                st.markdown('''<div style="text-align: justify;">Movie recommendation engine powered by Machine Learning (KNNeighbors). The engine
+                is twofold; if given a movie title it recommends 3 other movies based on genre, duration, year and rating amongst others. Further, 
+                it also presents the user with three top picks for the most rated genres and a sneak-peek to the movie's trailer. </div>''', unsafe_allow_html=True)
+                st.write('')
+                st.markdown('''<div style="text-align: justify;">This project leverages two databases: Imdb and Rotten Tomatoes. In terms of technology, the 
+                the engine is built with streamlit and all the EDA and ML with python and its libraries such as Pandas and Scikit-learn.</div>''', unsafe_allow_html=True)
         
         st.subheader('Movie Recomendation Engine')      
         inner_cols = st.columns([0.4,2])
@@ -101,7 +103,4 @@ if selected == "Portfolio":
                 image = Image.open('portada_libro2.png')
                 st.image(image)
         with inner_cols[1]: 
-                st.markdown('''<div style="text-align: justify;"> In my time at Liquid Lab Ventures among my usual tasks I led the process 
-                of documenting our methodology and writting a book where the Venture Building process is explained and detailed with our 
-                own ventures and expepreinces. The book is a guide for all of those willing to launch a new business making the most 
-                of the digital world! </div>''', unsafe_allow_html=True)
+                st.markdown('''<div style="text-align: justify;"> In my </div>''', unsafe_allow_html=True)
